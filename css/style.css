@@ -29,10 +29,8 @@ header {
   font-weight: 700;
   margin: 15px;
   border: 0.1rem solid rgba(255, 255, 255, 0.6);
-  background-color: #fff;
-  z-index: 1;
   overflow: hidden;
-  transition: all 0.5s;
+  transition: all 2s;
   background-image: radial-gradient(#e6eff3, #7ea6b9);
   opacity: 1;
   transition: opacity 1s;
@@ -49,7 +47,9 @@ header {
   padding: 6rem;
   background-image: linear-gradient(#7ea6b9, #a4b1b7);
 }
+
 .display-2 {
+  margin-bottom: 1rem;
   text-transform: capitalize;
   color: white;
   font-size: 3.5rem;
@@ -60,6 +60,11 @@ header {
   font-size: 1.4rem;
   display: inline-block;
 }
+.display-2-intro {
+  animation-name: animate;
+  animation-duration: 3s;
+}
+
 .download__title {
   text-align: center;
   margin-bottom: 3rem;
@@ -74,7 +79,7 @@ footer {
   padding-top: 1rem;
 }
 .footer-sm {
-  background-color: #7ea6b9;
+  background-color: #d2e2ea;
   color: rgb(7, 6, 6);
 }
 .footer-sm_icons {
@@ -93,9 +98,6 @@ footer {
 }
 .section__help {
   background-color: #7ea6b9;
-}
-.title__help {
-  background-color: white;
 }
 
 .video-responsive {
@@ -126,5 +128,18 @@ footer {
   width: 30%;
   position: absolute;
 }
+.menu {
+  background-color: #d2e2ea;
+}
 
+@keyframes animate {
+  0% {
+    margin-left: 100%;
+    opacity: 0;
+  }
 
+  100% {
+    margin-right: 0%;
+    opacity: 1;
+  }
+}
